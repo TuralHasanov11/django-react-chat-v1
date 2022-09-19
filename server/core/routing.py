@@ -10,7 +10,7 @@ from chat import routing
 application = ProtocolTypeRouter({
     "websocket": AuthMiddlewareStack(
       URLRouter(
-        routing.websocket_patterns
+        routing.websocket_urlpatterns
       )
     )
 })
